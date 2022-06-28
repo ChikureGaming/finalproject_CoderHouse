@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inknut Antiqua', serif;
+
+}
+.nav__responsive-ul{
+    display: none;
+}
+.navbar{
+    background-color: rgb(186, 137, 101);
+}
+.nav__li{
+    display: inline-block;
+    padding: 2px;
+    color: #e9d5c4;
+}
+.nav__li a{
+    color: #e9d5c4;
+    text-decoration: none;
+}
+.nav__li i{
+    text-align: right;
+}
+.nav__responsive-button-container{
+    position: absolute;
+    width: 100%;
+    font-size: 20px;
+    margin-top: -45px;
+}
+.nav__responsive-button{
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+}
+.div topimage{
+    max-height: fit-content;
+}
+
+/*.topimage{
+    background-image: url(../img/logotip_liz.jpg);
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:150px;
+    width: 100%;
+    display: inline-block;
+}*/
+.imagefooter{
+    max-width: 100%;
+    height: auto;
+}
+.topimage{
+    width: 100%;
+    height: 41.6px;
+}
+.gridmain{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-col-span-2{
+    grid-column:span 2;
+}
+.h1_col_area{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.mainimg{
+    width: 100%;
+}
+
+@media only screen and (max-width: 605px) {
+    .nav__ul {
+        display: none;
+    }
+    .navbar {
+        height: 45px;
+        width: 100%;
+    }
+    .nav__responsive-ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 45px;
+        height: 45px;
+    }
+    .nav__li-container{
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 45px);
+        background: rgb(186, 137, 101);
+        transition: all 2s;
+        z-index: 1;
+        width: 80%;
+    }
+    .nav__responsive-li{
+        width: 100%;
+        padding: 5px 15px;
+}
+    .nav__responsive-li i{
+        text-align: center;
+        margin-right: 10px;
+        width: 30px;
+        color: #e9d5c4;
+}
+    .nav__responsive-li a{
+        color: #e9d5c4;
+        text-decoration: none;
+}
+    .nav__responsive-ul:hover > .nav__li-container{
+        top: 0;
+    }
+}
+
