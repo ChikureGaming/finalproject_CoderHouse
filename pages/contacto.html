@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a43a6300c8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Contacto</title>
+    <title>Mapa</title>
 </head>
 <body>
 <header>
@@ -44,10 +44,37 @@
 </nav>
 </header>
 
-<div class="topimage"><a href="../index.html"></a>
+<div>
+    <a href="../index.html">
+    <img class="topimage" src="../assets/img/proyecto_liz_2.jpg" alt="">
+    </a>
 </div>
-    <main>
-    </main>
+    <main class="gridmain">
+        <h2>Formulario de Contacto</h2>
+        <form class="grid-col-span-3">
+                <fieldset>
+                <div>
+                    <label for="nombre-usuario">Ingrese Nombre y Apellido:</label>
+                    <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre Completo...">
+                </div>
+                <label for="email-usuario">Ingrese un correo</label>
+                <input type="email" name="email-usuario" id="email-usuario" placeholder="correo@Gmail.com...">
+                <div>
+                    <label for="telefono">Ingrese Número telefónico:</label>
+                    <input type="text" name="telefono" id="telefono" placeholder="Número telefónico...">
+                </div>
+                <label for="ciudad">Ingrese Ciudad:</label>
+                <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad...">
+                </div>
+                <label for="pais">Ingrese País:</label>
+                <input type="text" name="pais" id="pais" placeholder="País...">
+                <div>
+                    <input type="submit" value="Envíar">
+                    <input type="reset" value="Restablecer Formulario">
+                </div>
+            </fieldset>
+            </form>
+        </main>
     <footer class="footer">
         <img class="imagefooter"src="../Assets/img/minera_copper_creek_logo.jpg" alt="minera_copper_creek_logo">
     </footer>

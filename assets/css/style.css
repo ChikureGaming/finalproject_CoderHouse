@@ -34,26 +34,14 @@
     text-align: right;
     width: 100%;
 }
-.div topimage{
-    max-height: fit-content;
-}
 
-/*.topimage{
-    background-image: url(../img/logotip_liz.jpg);
-    overflow: hidden;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height:150px;
-    width: 100%;
-    display: inline-block;
-}*/
 .imagefooter{
     max-width: 100%;
     height: auto;
 }
 .topimage{
     width: 100%;
-    height: 41.6px;
+    height: auto;
 }
 .gridmain{
     display: grid;
@@ -62,6 +50,9 @@
 }
 .grid-col-span-2{
     grid-column:span 2;
+}
+.grid-col-span-3{
+    grid-column:span 3;
 }
 .h1_col_area{
     grid-column-start: 1;
