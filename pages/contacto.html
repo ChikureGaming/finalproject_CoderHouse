@@ -5,79 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a43a6300c8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Mapa</title>
+    <title>Contacto</title>
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <ul class="nav__ul">
-            <li class="nav__li"><i class="fa-solid fa-map-location-dot"></i><a href="../pages/mapa.html">Mapa</a>
-            </li>
-            <li class="nav__li"><i class="fa-solid fa-rectangle-list"></i><a href="../pages/propuesta.html">Propuesta</a>
-            </li>
-            <li class="nav__li"><i class="fa-brands fa-fort-awesome-alt"></i><a href="../pages/maquinaria.html">Maquinaria</a>
-            </li>
-            <li class="nav__li"><i class="fa-solid fa-money-bill-transfer"></i><a href="../pages/presupuesto.html">Presupuesto</a>
-            </li>
-            <li class="nav__li"><i class="fa-solid fa-address-card"></i><a href="../pages/contacto.html">Contacto</a>
-            </li>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand mb-0 h1">
+                    <img class="d-inline-block align-top" src="../assets/img/logotipo_mineria.jpg" width="30" height="30"
+                        alt="logotipo_mineria">
+                    Proyecto Liz
+                </a>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a href="../index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item active"><a href="../pages/mapa.html" class="nav-link">Mapa</a></li>
+                        <li class="nav-item active"><a href="../pages/maquinaria.html" class="nav-link">Maquinaria</a>
+                        </li>
+                        <li class="nav-item active"><a href="../pages/presupuesto.html" class="nav-link">Presupuesto</a>
+                        </li>
+                        <li class="nav-item active"><a href="../pages/propuesta.html" class="nav-link">Propuesta</a></li>
+                        <li class="nav-item active"><a href="../pages/contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         </ul>
-    <ul class="nav__responsive-ul">
-        <div class="nav__responsive-button-container">
-        <div class="nav__responsive-button"><i class="fa-solid fa-bars"></i></div>
-        </div>
-        <div class="nav__li-container">
-            <li class="nav__responsive-li"><i class="fa-solid fa-map-location-dot"></i><a href="../pages/mapa.html">Mapa</a>
-            </li>
-            <li class="nav__responsive-li"><i class="fa-solid fa-rectangle-list"></i><a href="../pages/propuesta.html">Propuesta</a>
-            </li>
-            <li class="nav__responsive-li"><i class="fa-brands fa-fort-awesome-alt"></i></i><a href="../pages/maquinaria.html">Maquinaria</a>
-            </li>
-            <li class="nav__responsive-li"><i class="fa-solid fa-money-bill-transfer"></i></i><a href="../pages/presupuesto.html">Presupuesto</a>
-            </li>
-            <li class="nav__responsive-li"><i class="fa-regular fa-address-card"></i><a href="../pages/contacto.html">Contacto</a>
-            </li>
-        </div>
-    </ul>
-</nav>
-</header>
+        </nav>
+    </header>
 
-<div>
-    <a href="../index.html">
-    <img class="topimage" src="../assets/img/proyecto_liz_2.jpg" alt="">
-    </a>
-</div>
     <main class="gridmain">
-        <h2>Formulario de Contacto</h2>
-        <form class="grid-col-span-3">
-                <fieldset>
-                <div>
-                    <label for="nombre-usuario">Ingrese Nombre y Apellido:</label>
-                    <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre Completo...">
+            <img class="mainimg" src="../assets/img/proyecto_liz_2022.jpg" alt="">
+            
+            <form class="formcontainer">
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="form6Example1" class="form-control" />
+                      <label class="form-label" for="form6Example1">Nombre(s)</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="form6Example2" class="form-control" />
+                      <label class="form-label" for="form6Example2">Apellidos</label>
+                    </div>
+                  </div>
                 </div>
-                <label for="email-usuario">Ingrese un correo</label>
-                <input type="email" name="email-usuario" id="email-usuario" placeholder="correo@Gmail.com...">
-                <div>
-                    <label for="telefono">Ingrese Número telefónico:</label>
-                    <input type="text" name="telefono" id="telefono" placeholder="Número telefónico...">
+                <div class="form-outline mb-4">
+                  <input type="text" id="form6Example3" class="form-control" />
+                  <label class="form-label" for="form6Example3">Nombre de la Compañía</label>
                 </div>
-                <label for="ciudad">Ingrese Ciudad:</label>
-                <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad...">
+                <div class="form-outline mb-4">
+                  <input type="text" id="form6Example4" class="form-control" />
+                  <label class="form-label" for="form6Example4">Dirección</label>
                 </div>
-                <label for="pais">Ingrese País:</label>
-                <input type="text" name="pais" id="pais" placeholder="País...">
-                <div>
-                    <input type="submit" value="Envíar">
-                    <input type="reset" value="Restablecer Formulario">
+                <div class="form-outline mb-4">
+                  <input type="email" id="form6Example5" class="form-control" />
+                  <label class="form-label" for="form6Example5">Email</label>
                 </div>
-            </fieldset>
-            </form>
-        </main>
-    <footer class="footer">
-        <img class="imagefooter"src="../Assets/img/minera_copper_creek_logo.jpg" alt="minera_copper_creek_logo">
+                <div class="form-outline mb-4">
+                  <input type="number" id="form6Example6" class="form-control" />
+                  <label class="form-label" for="form6Example6">Teléfono</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                  <label class="form-label" for="form6Example7">Información adicional</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mb-4">Envía Información</button>
+              </form>
+    </main>
+
+    <footer class="bg-light text-center">
+        <div class="container p-4 pb-0">
+            <section class="">
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Suscríbete para más información</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="correoUsuario" class="form-control" />
+                                <label class="form-label" for="correoUsuario">Correo Electrónico</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-4">
+                                Suscribirse
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Minera Copper Creek S.A. De C.V.
+            <a class="text-dark" href="./index.html">Proyecto Liz</a>
+        </div>
     </footer>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </html>
