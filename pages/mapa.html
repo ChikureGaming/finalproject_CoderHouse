@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description="
+        content="El mapa del proyecto Liz muestra la ubicación de la mina como sus alrededores para facilitar la planeación de acceso y rutas.">
+    <meta name="keywords" content="HTML, JS, META, Minería, Proyecto Liz, Plata, Ubicación, Distancia">
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Mapa</title>
+    <link rel="stylesheet" href="../assets/scss/style.css">
+    <title>Mapa Liz</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a href="../index.html" class="navbar-brand mb-0 h1">
                     <img class="d-inline-block align-top" src="../assets/img/logotipo_mineria.jpg" width="30"
-                        height="30" alt="logotipo_mineria">
+                        height="30" alt="Logotipo Empresa Copper Creek">
                     Proyecto Liz
                 </a>
                 <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
@@ -50,13 +53,14 @@
             <h1>La importancia de la Ubicación</h1>
         </div>
 
-        <img class="mainimg" src="../assets/img/mapa_liz.jpg" alt="">
+        <img class="mainimg" src="../assets/img/mapa_liz.jpg" alt="Mapa de ubicación de Mina">
 
-        <article class="grid-col-span-2">
-            <p>La mina se encuentra ubicada a un par de horas dentro del mismo estado de Jalisco.
+        <article class="row justify-content-around align-items-center">
+            <p class="section-2 col-10 col-md-6">La mina se encuentra ubicada a un par de horas dentro del mismo estado
+                de Jalisco.
                 Nuestra mina se descubrió y trabajó desde la epoca colonial el cuál trajo grandes cambios a la minería
                 mexicana.</p>
-            <p> 
+            <p class="section col-10 col-md-6">
                 El principal mineral que se explotó por parte de los Españoles fue el oro, hasta los años iniciales de
                 la cuarta década del siglo XVI cuando comenzaron a beneficiarse las primeras minas de plata descubiertas
                 en Taxco. Pequeños hallazgos posteriores en diversas regiones de la Nueva España incrementaron la
@@ -70,6 +74,48 @@
                 A finales de la época colonial se creó el Real Cuerpo de Minería de la Nueva España, el cual promulgó
                 las Ordenanzas Mineras y se abrió el Real Seminario de Minas.
 
+            </p>
+            <div class="h2_col_area">
+            <h2>Tipos de Minería más Comunes</h2>
+            </div>
+            <p class="section-1 col-10 col-md-6">
+                Minería de superficie
+                La minería de superficie es la más adecuada para extraer minerales que están cerca de la superficie de
+                la tierra. También suele ser un método de minería más rentable que la minería subterránea. Los minerales
+                comunes que se extraen mediante la minería de superficie son algunos de los más extraídos, como el
+                carbón, el hierro y la bauxita.
+            </p>
+            <img class="mainimg2" src="../assets/img/mina_subterranea.jpeg" alt="Fotografía Mina Subterranea Proyecto Liz">
+            <p class="section-2 col-10 col-md-6">
+                Minería subterránea (o minería subsuperficial)
+                La minería subterránea es mejor para extraer minerales que se encuentran en las profundidades de la
+                superficie de la tierra. Entre los minerales comunes que se extraen mediante la minería subterránea se
+                encuentran el oro, el plomo y la plata. Es importante recordar que muchos minerales se pueden extraer
+                tanto mediante la minería superficial como la subterránea. La relativa profundidad del yacimiento y el
+                valor económico del mineral tienen un papel importante a la hora de determinar qué método de minería se
+                debe utilizar. Una mina subterránea puede tener una profundidad de 300 metros o de 3 kilómetros. Por
+                ejemplo, la mina subterránea más profunda de la tierra, la mina de oro Mponeng, que se encuentra en
+                Sudáfrica, tiene una profundidad operativa de más de 3.1 km.
+            </p>
+
+            <p class="section-3 col-10 col-md-6">
+                Minería de placer
+                La minería de placer es el método de separar metales valiosos de sedimentos mediante un tamizado. Este
+                tipo de minería se lleva a cabo en lechos de ríos, arenas y entornos donde hay una acumulación natural
+                de sedimentos. Entre los minerales comunes que se recogen mediante la minería de placer se encuentran el
+                platino, el estaño y los diamantes.
+            </p>
+
+            <p class="section-4 col-10 col-md-6">
+                Minería in situ
+                La minería in situ es el método de recuperar minerales de la tierra sin extraer la mezcla de rocas y
+                minerales de la superficie para su procesamiento. Esto se logra al inyectar una solución que disuelve el
+                mineral en su ubicación original y se bombea la solución que ahora incluye los minerales hacia la
+                superficie. El mineral más común que se extrae mediante la minería in situ es el uranio.
+
+                Para los mineros, cuatro de las consideraciones que incluyen en la elección entre estos métodos de
+                minería son la ubicación del mineral, el valor financiero del yacimiento, las consideraciones
+                medioambientales y la composición química del mineral.
             </p>
         </article>
     </main>
@@ -91,7 +137,7 @@
                             </div>
                         </div>
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-primary mb-4">
+                            <button type="submit" class="btn btn-secondary mb-4">
                                 Suscribirse
                             </button>
                         </div>
@@ -99,7 +145,7 @@
                 </form>
             </section>
         </div>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="footerend text-center p-3">
             Minera Copper Creek S.A. De C.V.
             <a class="text-dark" href="./index.html">Proyecto Liz</a>
         </div>

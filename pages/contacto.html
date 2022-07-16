@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description="
+        content="Información de contacto para iniciar comunicaciones con interesados en Proyecto Liz">
+    <meta name="keywords" content="HTML, JS, META, Minería, Proyecto Liz, Plata, Información de Contacto">
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Contacto</title>
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/scss/style.css">
+    <title>Contacto Proyecto Liz</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="container">
                 <a href="../index.html" class="navbar-brand mb-0 h1">
-                    <img class="d-inline-block align-top" src="../assets/img/logotipo_mineria.jpg" width="30" height="30"
-                        alt="logotipo_mineria">
+                    <img class="d-inline-block align-top" src="../assets/img/logotipo_mineria.jpg" width="30"
+                        height="30" alt="Logotipo Empresa Copper Creek">
                     Proyecto Liz
                 </a>
                 <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
@@ -31,7 +36,8 @@
                         </li>
                         <li class="nav-item active"><a href="../pages/presupuesto.html" class="nav-link">Presupuesto</a>
                         </li>
-                        <li class="nav-item active"><a href="../pages/propuesta.html" class="nav-link">Propuesta</a></li>
+                        <li class="nav-item active"><a href="../pages/propuesta.html" class="nav-link">Propuesta</a>
+                        </li>
                         <li class="nav-item active"><a href="../pages/contacto.html" class="nav-link">Contacto</a></li>
                     </ul>
                 </div>
@@ -42,73 +48,92 @@
     </header>
 
     <main class="gridmain">
-            <img class="mainimg" src="../assets/img/proyecto_liz_2022.jpg" alt="">
-            
+        <img class="mainimg" src="../assets/img/proyecto_liz_2022.jpg"
+            alt="Fotografía persona entrando a mina subterranea">
+
+        <div class="h1_col_area">
+            <h1>Contáctanos si quieres más Información</h1>
+        </div>
+
+        <article class="row justify-content-around align-items-center">
+            <p class="section col-10 col-md-6"> La minería de oro artesanal y en pequeña escala (MAPE) a menudo se
+                asocia con la degradación ambiental, la explotación de los trabajadores, las prácticas inseguras e
+                incluso los conflictos. Sin embargo, el sector también es una fuente de empleo y desarrollo económico
+                local en algunas de las zonas más desfavorecidas del mundo, donde existen pocas alternativas. En los
+                últimos años, los operadores responsables de la MAPE han logrado grandes avances para demostrar que el
+                sector puede ser un motor del desarrollo sostenible. Pero quedan muchos desafíos. El principal de ellos
+                es el falta de conciencia de lo que el sector puede hacer por las comunidades locales con el apoyo
+                adecuado y el acceso a los mercados.</p>
+
+            <p class="section-1 col-10 col-md-6">
+                Si te interesa aprender más de la minera o ser parte de ella, déjanos tus datos en el formulario y te
+                contactaremos lo más pronto posible con más información del proyecto.
+            </p>
+        </article>
+
             <form class="formcontainer">
                 <div class="row mb-4">
-                  <div class="col">
-                    <div class="form-outline">
-                      <input type="text" id="form6Example1" class="form-control" />
-                      <label class="form-label" for="form6Example1">Nombre(s)</label>
+                    <div class="col">
+                        <div class="form-outline">
+                            <input type="text" id="name" class="form-control" />
+                            <label class="form-label" for="Name">Nombre(s)</label>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-outline">
-                      <input type="text" id="form6Example2" class="form-control" />
-                      <label class="form-label" for="form6Example2">Apellidos</label>
+                    <div class="col">
+                        <div class="form-outline">
+                            <input type="text" id="lastName" class="form-control" />
+                            <label class="form-label" for="lastName">Apellidos</label>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div class="form-outline mb-4">
-                  <input type="text" id="form6Example3" class="form-control" />
-                  <label class="form-label" for="form6Example3">Nombre de la Compañía</label>
+                    <input type="text" id="company" class="form-control" />
+                    <label class="form-label" for="company">Nombre de la Compañía</label>
                 </div>
                 <div class="form-outline mb-4">
-                  <input type="text" id="form6Example4" class="form-control" />
-                  <label class="form-label" for="form6Example4">Dirección</label>
+                    <input type="text" id="address" class="form-control" />
+                    <label class="form-label" for="address">Dirección</label>
                 </div>
                 <div class="form-outline mb-4">
-                  <input type="email" id="form6Example5" class="form-control" />
-                  <label class="form-label" for="form6Example5">Email</label>
+                    <input type="email" id="form6Example5" class="form-control" />
+                    <label class="form-label" for="form6Example5">Email</label>
                 </div>
                 <div class="form-outline mb-4">
-                  <input type="number" id="form6Example6" class="form-control" />
-                  <label class="form-label" for="form6Example6">Teléfono</label>
+                    <input type="number" id="phone" class="form-control" />
+                    <label class="form-label" for="phone">Teléfono</label>
                 </div>
                 <div class="form-outline mb-4">
-                  <textarea class="form-control" id="form6Example7" rows="4"></textarea>
-                  <label class="form-label" for="form6Example7">Información adicional</label>
+                    <textarea class="form-control" id="additionalInfo" rows="4"></textarea>
+                    <label class="form-label" for="additionalInfo">Información adicional</label>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block mb-4">Envía Información</button>
-              </form>
+                <button type="submit" class="btn btn-secondary btn-block mb-4">Envía Información</button>
+            </form>
     </main>
 
     <footer class="bg-light text-center">
         <div class="container p-4 pb-0">
-            <section class="">
-                <form action="">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-auto">
-                            <p class="pt-2">
-                                <strong>Suscríbete para más información</strong>
-                            </p>
-                        </div>
-                        <div class="col-md-5 col-12">
-                            <div class="form-outline form-white mb-4">
-                                <input type="email" id="correoUsuario" class="form-control" />
-                                <label class="form-label" for="correoUsuario">Correo Electrónico</label>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <button type="submit" class="btn btn-primary mb-4">
-                                Suscribirse
-                            </button>
+            <form>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-auto">
+                        <p class="pt-2">
+                            <strong>Suscríbete para más información</strong>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-12">
+                        <div class="form-outline form-white mb-4">
+                            <input type="email" id="correoUsuario" class="form-control" />
+                            <label class="form-label" for="correoUsuario">Correo Electrónico</label>
                         </div>
                     </div>
-                </form>
-            </section>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-secondary mb-4">
+                            Suscribirse
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="footerend text-center p-3">
             Minera Copper Creek S.A. De C.V.
             <a class="text-dark" href="./index.html">Proyecto Liz</a>
         </div>
@@ -118,4 +143,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+
 </html>

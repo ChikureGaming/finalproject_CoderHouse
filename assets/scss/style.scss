@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inknut Antiqua', serif;
+
+}
+@import "variables";
+
+@mixin PropiedadesTexto ($fontsize,$lineheight) {
+    font-size:$fontsize;
+    line-height:$lineheight;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainimg{
+    border-radius: 10px 100px / 120px;
+    padding: 15px;
+    margin: 15px;
+    margin: auto;
+    width: 100%;
+    grid-column:span 3;
+}
+
+.mainimg2{
+    border-radius: 50% 20% / 10% 40%;
+    padding: 15px;
+    margin: 15px;
+    margin: auto;
+    width: 100%;
+    grid-column:span 3;
+}
+
+.gridmain{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(200,174,88,1) 49%, rgba(250,247,241,1) 100%);
+}
+
+.h1_col_area{
+    grid-column:span 3;
+    text-align: center;
+}
+.h2_col_area{
+    grid-column:span 3;
+    text-align: center;
+}
+.footerend{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.formcontainer{
+    padding: 15px;
+    grid-column:span 3;
+    text-align: center;
+}
+.p{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.section{
+    padding: 15px;
+    margin: 15px;
+    @include PropiedadesTexto(18px,24px);
+}
+
+.section-1{
+    @extend .section;
+
+}
+
+.section-2{
+    @extend .section;
+}
+
+.section-3{
+    @extend .section;
+}
+
+.section-4{
+    @extend .section;
+}
+
+
+@for $var from 1 through 10 {
+    
+    .col-#{$var}{
+        width: 10% * $var;
+    }
+}
+
+
+
+@each $clave , $var in $justify {
+
+    .justify-content-#{$clave} {
+        justify-content: $var;
+    }
+}
+
+@each $var in start,center,end {
+
+    .align-items-#{$var}{
+        align-items: $var;
+    }
+}
+
+@media (min-width: 800px){
+    @for $var from 1 through 10 {
+        .mainimg{
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .mainimg2{
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .col-md-#{$var}{
+            width: 10% * $var;
+        }
+    .formcontainer{
+width: 50%;
+margin: auto;
+        }
+    }
+}
